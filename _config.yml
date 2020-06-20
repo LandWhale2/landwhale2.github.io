@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Site Title"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
+name                     : "Landwhale"
 description              : "An amazing website."
 url                      : "https://landwhale.github.io"
 baseurl                  : ""
@@ -93,11 +93,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Landwhale"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "."
+  location         : "Korea"
+  email            : "landwhale@kakao.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
