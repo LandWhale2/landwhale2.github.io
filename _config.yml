@@ -20,7 +20,7 @@ title                    : "Landwhale 기록 블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Landwhale"
-description              : "An amazing website."
+description              : "Landwhale 기록 블로그"
 url                      : "https://landwhale.github.io"
 baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Landwhale"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "."
+  bio              : "나 혼자 보려고 하는 "
   location         : "Korea"
   email            : "landwhale@kakao.com"
   links:
