@@ -1,0 +1,42 @@
+---
+title: "톰캣 서버 2개 이상 켜기"
+date : 2020-12-18 22:19:30 -0400
+categories: Linux
+---
+
+
+# 톰캣 서버 2개 이상 켜기
+
+
+server.xml 파일을 수정해,
+
+서버 포트를 겹치지 않게한다.
+
+EX) 
+server port (내부) : 8005, 8105
+ajp1.3 port (내부) : 8009, 8109
+Connector port (외부) : 8080, 8180
+
+
+
+톰캣폴더 bin 폴더내의 catalina.sh 파일을 수정한다.
+
+
+```
+PRG="$0"
+
+while [ -h "$PRG" ]; do
+  ls=`ls -ld "$PRG"`
+  link=`expr "$ls" : '.*-> \(.*\)$'`
+  if expr "$link" : '/.*' > /dev/null; then
+    PRG="$link"
+  else
+    PRG=`dirname "$PRG"`/"$link"
+  fi
+done
+
+export CATALINA_HOME=/usr/local/tomcat8.5
+export TOMCAT_HOME=/usr/local/tomcat8.5
+export CATALINA_BASE=/usr/local/tomcat8.5
+
+```
